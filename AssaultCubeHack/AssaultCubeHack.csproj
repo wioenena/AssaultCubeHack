@@ -8,4 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="MemoryX">
+      <HintPath>..\..\..\..\..\Downloads\MemoryX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
