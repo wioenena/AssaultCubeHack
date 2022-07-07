@@ -23,17 +23,6 @@ namespace AssaultCubeHack
             this.labelBaseAddresss.Text = "0x" + this.baseAddrss.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int newHealth = int.Parse(this.textBoxHealth.Text);
-                int ammo =
-                this.memoryX.WriteMemoryPointer(this.baseAddrss + 0x109B74, new int[] { 0xF8 }, newHealth);
-                MessageBox.Show(this.memoryX.ReadMemoryPointerInt(this.baseAddrss + 0x0010A280, new int[] { 0x8, 0xDCC, 0x34, 0x6C, 0xA4, 0x438 }).ToString());
-            } catch { }
-        }
-
         private void healthActive_Click(object sender, EventArgs e)
         {
             try
